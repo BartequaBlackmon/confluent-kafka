@@ -1,0 +1,41 @@
+{
+  "type": "record",
+  "name": "PatientRecord",
+  "namespace": "healthcare",
+  "doc": "Avro schema for patient disease data.",
+  "fields": [
+    {
+      "name": "Patient_ID",
+      "type": "int",
+      "doc": "Unique identifier for the patient."
+    },
+    {
+      "name": "Age",
+      "type": "int",
+      "doc": "Age of the patient."
+    },
+    {
+      "name": "Gender",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Gender of the patient."
+    },
+    {
+      "name": "Symptoms",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Comma-separated list of patient symptoms."
+    },
+    {
+      "name": "Symptom_Count",
+      "type": "int",
+      "doc": "The total count of reported symptoms."
+    },
+    {
+      "name": "Disease",
+      "type": ["null", "string"],
+      "default": null,
+      "doc": "Diagnosed disease or condition."
+    }
+  ]
+}
