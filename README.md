@@ -246,51 +246,6 @@ Stop the application using **Ctrl + C**.
 
 ---
 
-# Troubleshooting
-
-## 404 Resource not found
-
-Example:
-
-```
-google.api_core.exceptions.NotFound:
-404 Resource not found (resource=orders_data)
-```
-
-Verify that:
-
-* The Pub/Sub topic exists.
-* The Pub/Sub subscription exists.
-* The subscription is attached to the correct topic.
-* The application is using the correct Google Cloud project.
-* Your service account has permission to access Pub/Sub resources.
-
----
-
-## Authentication Errors
-
-If authentication fails:
-
-* Verify `GOOGLE_APPLICATION_CREDENTIALS` points to a valid service account key.
-* Ensure the service account has the **Pub/Sub Publisher** and **Pub/Sub Subscriber** IAM roles.
-
----
-
-# Future Improvements
-
-* Configuration using environment variables
-* Logging instead of console output
-* Dead-letter queue support
-* Retry handling
-* Docker support
-* Unit tests
-* Message filtering
-* Graceful shutdown
-* Async publisher and subscriber
-* Configuration via `.env` file
-
----
-
 # Technologies Used
 
 * Python
