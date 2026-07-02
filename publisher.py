@@ -1,12 +1,12 @@
 import json
 import pandas as pd
 from google.cloud import pubsub_v1
-from config import PUBSUB_PROJECT_ID, TOPIC_ID, CVS_FILE
+#from config import PUBSUB_PROJECT_ID, TOPIC_ID, CVS_FILE
 
 publisher = pubsub_v1.PublisherClient()
-topic_path = publisher.topic_path(PUBSUB_PROJECT_ID, TOPIC_ID)  
+topic_path = publisher.topic_path(hadoopcluster-496518, healthcare)  
 
-df =pd.read_csv(CVS_FILE)
+df =pd.read_csv(Healthcare.csv)
 
 print(f"Publishing {len(df)} records....\n")
 

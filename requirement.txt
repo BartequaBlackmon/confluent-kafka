@@ -1,0 +1,3 @@
+pip install google-cloud-pubsub pandas
+
+set GOOGLE_APPLICATION_CREDENTIAL=C:\keys\service-account
